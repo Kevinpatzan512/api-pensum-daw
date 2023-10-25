@@ -10,103 +10,60 @@ app.use(express.json())
 
 const tecnicoComputacion = {
   ciclo1: {
-    ANF231: { nombre: "Antropologia", prerrequisito: "Bachillerato", UV: 3 },
+    ANF231: { nombre: "Antropología Filosófica", prerrequisito: "Bachillerato", UV: 3 },
     PAL404: {
-      nombre: "Programacion_Algoritmos",
-      prerrequisito: "Bachillerato",
-      UV: 4,
-    },
-    ALG501: { nombre: "Algebra", prerrequisito: "Bachillerato", UV: 4 },
+      nombre: "Programación de Algoritmos", prerrequisito: "Bachillerato", UV: 4, },
+    ALG501: { 
+      nombre: "Álgebra Vectorial y Matrices", prerrequisito: "Bachillerato", UV: 4 },
     LME404: {
-      nombre: "Lenguajes_Marcado",
-      prerrequisito: "Bachillerato",
-      UV: 4,
-    },
-    REC404: { nombre: "Redes", prerrequisito: "Bachillerato", UV: 4 },
+      nombre: "Lenguajes de Marcado y Estilo Web", prerrequisito: "Bachillerato", UV: 4, },
+    REC404: { 
+      nombre: "Redes de Comunicación", prerrequisito: "Bachillerato", UV: 4 }, 
   },
   ciclo2: {
     PSC231: {
-      nombre: "Pensamiento_Social",
-      prerrequisito: "Bachillerato",
-      UV: 3,
-    },
+      nombre: "Pensamiento Social Cristiano", prerrequisito: "Bachillerato", UV: 3, },
     POO404: {
-      nombre: "Programacion_OrientadaObjetos",
-      prerrequisito: ["Programacion_Algoritmos"],
-      UV: 4,
-    },
+      nombre: "Programación Orientada a Objetos", prerrequisito: ["Programación de Algoritmos"], UV: 4, },
     DAW404: {
-      nombre: "Desarrollo_AppWeb",
-      prerrequisito: ["Lenguajes_Marcado"],
-      UV: 4,
-    },
+      nombre: "Desarrollo de Aplic. Web con Soft. Interpret. en el Cliente", prerrequisito: ["Lenguajes de Marcado y Estilo Web"], UV: 4,},
     DSP404: {
-      nombre: "Desarrollo_SoftPropietario",
-      prerrequisito: ["Programacion_Algoritmos"],
-      UV: 4,
-    },
+      nombre: "Desarrollo de Aplicaciones con Software Propietario", prerrequisito: ["Programación de Algoritmos"], UV: 4, },
     ASB404: {
-      nombre: "Analisis_BasesDatos",
-      prerrequisito: ["Programacion_Algoritmos"],
-      UV: 4,
-    },
+      nombre: "Análisis y Diseño de Sistemas y Base de Datos", prerrequisito: ["Programación de Algoritmos"], UV: 4, },
   },
 };
 
 const ingenieriaComputacion = {
   ciclo1: {
     CAD501: {
-      nombre: "Calculo_Diferencial",
-      prerrequisito: "Bachillerato",
-      UV: 4,
-    },
-    QUG501: { nombre: "Quimica_General", prerrequisito: "Bachillerato", UV: 4 },
-    ANF231: { nombre: "Antropologia", prerrequisito: "Bachillerato", UV: 3 },
+      nombre: "Cálculo Diferencia", prerrequisito: "Bachillerato", UV: 4, },
+    QUG501: { 
+      nombre: "Química Genera", prerrequisito: "Bachillerato", UV: 4 },
+    ANF231: { 
+      nombre: "Antropología Filosófica", prerrequisito: "Bachillerato", UV: 3 },
     PRE104: {
-      nombre: "Programacion_Estructurada",
-      prerrequisito: "Bachillerato",
-      UV: 4,
-    },
+      nombre: "Programación Estructurada", prerrequisito: "Bachillerato", UV: 4, },
   },
   ciclo2: {
-    ALG501: { nombre: "Algebra", prerrequisito: "Bachillerato", UV: 4 },
+    ALG501: { 
+      nombre: "Álgebra Vectorial y Matrices", prerrequisito: "Bachillerato", UV: 4 },
     CAI501: {
-      nombre: "Calculo_Integral",
-      prerrequisito: "Bachillerato",
-      UV: 4,
-    },
+      nombre: "Cálculo Integral", prerrequisito: "Bachillerato", UV: 4, },
     MDB104: {
-      nombre: "Modelamiento_BasesDatos",
-      prerrequisito: ["Programacion_Estructurada"],
-      UV: 4,
-    },
+      nombre: "Modelamiento y Diseño de Base de Datos", prerrequisito: ["Programación Estructurada"], UV: 4, },
     POO404: {
-      nombre: "Programacion_OrientadaObjetos",
-      prerrequisito: ["Programacion_Estructurada"],
-      UV: 4,
-    },
+      nombre: "Programación Orientada a Objetos", prerrequisito: ["Programación Estructurada"], UV: 4, },
   },
   ciclo3: {
     CVV501: {
-      nombre: "Calculo_Variables",
-      prerrequisito: "Bachillerato",
-      UV: 4,
-    },
+      nombre: "Cálculo de Varias Variables", prerrequisito: "Bachillerato",UV: 4, },
     CDP501: {
-      nombre: "Cinematica_Dinamica_Particulas",
-      prerrequisito: "Bachillerato",
-      UV: 4,
-    },
+      nombre: "Cinemática y Dinámica de Partículas", prerrequisito: "Bachillerato", UV: 4, },
     ADS104: {
-      nombre: "Analisis_SistemasInformaticos",
-      prerrequisito: ["Modelamiento_BasesDatos"],
-      UV: 4,
-    },
+      nombre: "Análisis y Diseño de Sistemas Informáticos", prerrequisito: ["Modelamiento y Diseño de Base de Datos"], UV: 4, },
     PED104: {
-      nombre: "Programacion_Datos",
-      prerrequisito: ["Programacion_OrientadaObjetos"],
-      UV: 4,
-    },
+      nombre: "Programación con Estructuras de Datos", prerrequisito: ["Programación Orientada a Objetos"], UV: 4, },
   },
 };
 
